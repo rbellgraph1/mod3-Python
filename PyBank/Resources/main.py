@@ -66,34 +66,16 @@ print(f"Greatest Decrease in Profits:  {str(greatest_decrease [0])} ${str(greate
 
 with open(file_to_output, "w") as txt_file:
     Summary_of_budget=(
-    f"Finanancial Analysis"
-    "----------------------------------"
-    f"Total Months: {str(total_months)}"
-    f"Total: ${str(total_net)}"
-    f"Average Change:  ${str(average)}"
-    f"Greatest Increase in Profits:  {str(greatest_increase [0])} ${str(greatest_increase[1])}"
-    f"Greatest Decrease in Profits:  {str(greatest_decrease [0])} ${str(greatest_decrease [1])}"
+    f"Finanancial Analysis\n"
+    "----------------------------------\n"
+    f"Total Months: {str(total_months)}\n"
+    f"Total: ${str(total_net)}\n"
+    f"Average Change:  ${str(average)}\n"
+    f"Greatest Increase in Profits:  {str(greatest_increase [0])} ${str(greatest_increase[1])}\n"
+    f"Greatest Decrease in Profits:  {str(greatest_decrease [0])} ${str(greatest_decrease [1])}\n"
     )
     # print(Summary_of_budget, end="")
     txt_file.write(Summary_of_budget)
-
-# output_path = os.path.join("analysis", "budget_analysis.csv")
-# budget_data =zip(
-#     )
-# with open('Budget_Analysis.txt', "w") as budgetIO:
-#     csvwriter = csv.writer(budgetIO)
-# #     # Write the header row
-#     csvwriter.writerow({
-#     ("Finanancial Analysis"),
-#     ("----------------------------------"),
-#     (f"Total Months: {str(total_months)}"),
-#     (f"Total: ${str(total_net)}"),
-#     (f"Average Change:  ${str(average)}"),
-#     (f"Greatest Increase in Profits:  {str(greatest_increase [0])} ${str(greatest_increase[1])}"),
-#     (f"Greatest Decrease in Profits:  {str(greatest_decrease [0])} ${str(greatest_decrease [1])}" ),
-#     })
-#     csvwriter.writerow(budget_data)
-    
 
 
 
